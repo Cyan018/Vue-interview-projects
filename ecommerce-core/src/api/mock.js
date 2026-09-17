@@ -4,7 +4,7 @@ const products = [
   {
     id: 1,
     name: '极简白衬衫',
-    image: '👔',
+    image: '白衬衫',
     price: 199,
     discountPrice: 159,
     skus: [
@@ -16,7 +16,7 @@ const products = [
   {
     id: 2,
     name: '黑色工装裤',
-    image: '👖',
+    image: '工装裤',
     price: 259,
     discountPrice: 199,
     skus: [
@@ -27,7 +27,7 @@ const products = [
   {
     id: 3,
     name: '帆布托特包',
-    image: '👜',
+    image: '托特包',
     price: 129,
     discountPrice: 99,
     skus: [
@@ -37,7 +37,7 @@ const products = [
   {
     id: 4,
     name: '纯白运动鞋',
-    image: '👟',
+    image: '运动鞋',
     price: 399,
     discountPrice: 329,
     skus: [
@@ -49,7 +49,7 @@ const products = [
   {
     id: 5,
     name: '极简石英表',
-    image: '⌚',
+    image: '石英表',
     price: 599,
     discountPrice: 499,
     skus: [
@@ -59,7 +59,7 @@ const products = [
   {
     id: 6,
     name: '无线蓝牙耳机',
-    image: '🎧',
+    image: '蓝牙耳机',
     price: 299,
     discountPrice: 239,
     skus: [

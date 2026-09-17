@@ -144,7 +144,12 @@ h2 {
   height: 52px;
   display: grid;
   place-items: center;
-  font-size: 28px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+  padding: 4px;
+  text-align: center;
+  word-break: break-all;
   background: #f3f4f6;
   border: 1px solid #111;
 }

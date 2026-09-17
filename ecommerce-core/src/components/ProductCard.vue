@@ -40,7 +40,12 @@ defineEmits(['buy', 'add'])
   aspect-ratio: 1;
   display: grid;
   place-items: center;
-  font-size: 64px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 10px;
+  text-align: center;
+  word-break: break-all;
   background: #f3f4f6;
   margin-bottom: 14px;
 }

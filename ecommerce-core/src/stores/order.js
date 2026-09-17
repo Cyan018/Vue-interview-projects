@@ -10,7 +10,7 @@ const seedOrders = [
     createdAt: '2026-09-17 10:20',
     payable: 159,
     items: [
-      { id: 'demo-4', name: '极简白衬衫', image: '👔', skuName: '白色 / M', quantity: 1, price: 199, discountPrice: 159 }
+      { id: 'demo-4', name: '极简白衬衫', image: '白衬衫', skuName: '白色 / M', quantity: 1, price: 199, discountPrice: 159 }
     ]
   },
   {
@@ -19,7 +19,7 @@ const seedOrders = [
     createdAt: '2026-09-16 15:45',
     payable: 199,
     items: [
-      { id: 'demo-3', name: '黑色工装裤', image: '👖', skuName: '黑色 / L', quantity: 1, price: 259, discountPrice: 199 }
+      { id: 'demo-3', name: '黑色工装裤', image: '工装裤', skuName: '黑色 / L', quantity: 1, price: 259, discountPrice: 199 }
     ]
   },
   {
@@ -28,7 +28,7 @@ const seedOrders = [
     createdAt: '2026-09-14 09:10',
     payable: 329,
     items: [
-      { id: 'demo-2', name: '纯白运动鞋', image: '👟', skuName: '白色 / 40', quantity: 1, price: 399, discountPrice: 329 }
+      { id: 'demo-2', name: '纯白运动鞋', image: '运动鞋', skuName: '白色 / 40', quantity: 1, price: 399, discountPrice: 329 }
     ]
   },
   {
@@ -37,7 +37,7 @@ const seedOrders = [
     createdAt: '2026-09-10 18:30',
     payable: 239,
     items: [
-      { id: 'demo-1', name: '无线蓝牙耳机', image: '🎧', skuName: '白色', quantity: 1, price: 299, discountPrice: 239 }
+      { id: 'demo-1', name: '无线蓝牙耳机', image: '蓝牙耳机', skuName: '白色', quantity: 1, price: 299, discountPrice: 239 }
     ]
   }
 ]
