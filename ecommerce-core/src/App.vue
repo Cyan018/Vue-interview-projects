@@ -39,33 +39,37 @@ const drawerOpen = ref(false)
 <style scoped>
 .app {
   min-height: 100vh;
-  background: #fff;
+  background: transparent;
 }
 
 .header {
   position: sticky;
   top: 0;
   z-index: 20;
-  height: 60px;
+  height: 64px;
   display: flex;
   align-items: center;
   gap: 16px;
   padding: 0 24px;
-  background: #111;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--text);
+  border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px) saturate(1.12);
+  -webkit-backdrop-filter: blur(20px) saturate(1.12);
 }
 
 .icon-btn {
-  border: 1px solid #fff;
+  border: 1px solid rgba(63, 64, 62, 0.35);
   background: transparent;
-  color: #fff;
+  color: var(--text);
   width: 34px;
   height: 34px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .brand {
-  color: #fff;
+  color: var(--text);
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -75,7 +79,7 @@ const drawerOpen = ref(false)
 }
 
 .cart-link {
-  color: #fff;
+  color: var(--text);
 }
 
 .cart-icon {
@@ -90,8 +94,11 @@ const drawerOpen = ref(false)
   width: 260px;
   height: 100vh;
   padding: 24px;
-  background: #111;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--text);
+  border-right: 1px solid var(--glass-border);
+  backdrop-filter: blur(24px) saturate(1.15);
+  -webkit-backdrop-filter: blur(24px) saturate(1.15);
   transform: translateX(-100%);
   transition: transform 0.25s ease;
 }
@@ -104,6 +111,7 @@ const drawerOpen = ref(false)
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 700;
+  color: var(--text);
 }
 
 .sidebar-nav {
@@ -113,7 +121,7 @@ const drawerOpen = ref(false)
 }
 
 .sidebar-nav a {
-  color: #e5e7eb;
+  color: var(--text);
   font-size: 16px;
 }
 
@@ -121,10 +129,10 @@ const drawerOpen = ref(false)
   position: fixed;
   inset: 0;
   z-index: 30;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(60, 60, 55, 0.18);
 }
 
 .main {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 64px);
 }
 </style>

@@ -82,7 +82,7 @@ onMounted(load)
 }
 
 .state {
-  color: #6b7280;
+  color: var(--text-soft);
   text-align: center;
   padding: 60px 0;
 }

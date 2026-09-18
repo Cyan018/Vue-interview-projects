@@ -94,7 +94,7 @@ onBeforeUnmount(() => {
 }
 
 .label {
-  color: #111;
+  color: var(--text);
   font-size: 14px;
 }
 
@@ -110,7 +110,7 @@ onBeforeUnmount(() => {
   display: grid;
   place-items: center;
   background: rgba(255, 255, 255, 0.92);
-  color: #111;
+  color: var(--text);
   font-weight: 700;
 }
 </style>

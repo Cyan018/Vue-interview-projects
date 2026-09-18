@@ -196,7 +196,7 @@ h2 {
   align-items: center;
   gap: 14px;
   padding: 12px 0;
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid var(--glass-border);
 }
 
 .image {
@@ -210,8 +210,9 @@ h2 {
   padding: 4px;
   text-align: center;
   word-break: break-all;
-  background: #f3f4f6;
-  border: 1px solid #111;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
 }
 
 .info {
@@ -225,7 +226,7 @@ h2 {
 
 .sku {
   margin: 0;
-  color: #9ca3af;
+  color: var(--text-soft);
   font-size: 13px;
 }
 
@@ -236,7 +237,7 @@ h2 {
 }
 
 .hint {
-  color: #9ca3af;
+  color: var(--text-soft);
   font-size: 13px;
 }
 
@@ -251,7 +252,7 @@ h2 {
 }
 
 .row.total {
-  border-top: 1px solid #111;
+  border-top: 1px solid var(--glass-border);
   font-size: 18px;
   font-weight: 700;
 }

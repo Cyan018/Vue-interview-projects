@@ -37,8 +37,14 @@ defineEmits(['toggle', 'change-quantity', 'remove'])
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 16px 0;
-  border-bottom: 1px solid #f3f4f6;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: var(--surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(18px) saturate(1.1);
+  -webkit-backdrop-filter: blur(18px) saturate(1.1);
 }
 
 .thumb {
@@ -52,8 +58,9 @@ defineEmits(['toggle', 'change-quantity', 'remove'])
   padding: 4px;
   text-align: center;
   word-break: break-all;
-  background: #f3f4f6;
-  border: 1px solid #111;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
 }
 
 .info {
@@ -67,7 +74,7 @@ h3 {
 
 .sku {
   margin: 0 0 6px;
-  color: #9ca3af;
+  color: var(--text-soft);
   font-size: 13px;
 }
 
@@ -77,7 +84,7 @@ h3 {
 
 .origin {
   margin-left: 6px;
-  color: #9ca3af;
+  color: var(--text-soft);
   font-weight: 400;
   text-decoration: line-through;
 }

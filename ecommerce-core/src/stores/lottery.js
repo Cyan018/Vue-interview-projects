@@ -21,15 +21,17 @@ export const useLotteryStore = defineStore('lottery', {
       try {
         const data = await drawApi()
         this.lastResult = data.prize
-        this.history.unshift({
-          orderId: data.orderId,
-          name: data.prize.name,
-          time: new Date().toLocaleTimeString()
-        })
         return data
       } finally {
         this.drawing = false
       }
+    },
+    recordResult(data) {
+      this.history.unshift({
+        orderId: data.orderId,
+        name: data.prize.name,
+        time: new Date().toLocaleTimeString()
+      })
     }
   }
 })

@@ -116,8 +116,9 @@ function confirm() {
   padding: 4px;
   text-align: center;
   word-break: break-all;
-  background: #f3f4f6;
-  border: 1px solid #111;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
 }
 
 h3 {
@@ -127,19 +128,19 @@ h3 {
 
 .price {
   margin: 0;
-  color: #111;
+  color: var(--text);
   font-weight: 700;
 }
 
 .origin {
   margin-left: 8px;
-  color: #9ca3af;
+  color: var(--text-soft);
   font-weight: 400;
   text-decoration: line-through;
 }
 
 .label {
-  color: #111;
+  color: var(--text);
   font-size: 14px;
 }
 
@@ -149,7 +150,7 @@ h3 {
 }
 
 .stock {
-  color: #9ca3af;
+  color: var(--text-soft);
   font-size: 13px;
 }
 

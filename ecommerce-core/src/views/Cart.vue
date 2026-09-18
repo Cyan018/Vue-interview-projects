@@ -68,7 +68,7 @@ function goCheckout() {
   align-items: center;
   gap: 18px;
   padding: 12px 0;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid var(--glass-border);
 }
 
 .list {
@@ -81,13 +81,16 @@ function goCheckout() {
   right: 0;
   bottom: 0;
   z-index: 15;
-  height: 72px;
+  height: 76px;
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 0 max(24px, calc((100vw - 1080px) / 2));
-  background: #111;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--text);
+  border-top: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px) saturate(1.12);
+  -webkit-backdrop-filter: blur(20px) saturate(1.12);
 }
 
 .amount {
@@ -99,12 +102,12 @@ function goCheckout() {
 }
 
 .origin {
-  color: #9ca3af;
+  color: var(--text-soft);
   text-decoration: line-through;
 }
 
 .saved {
-  color: #f87171;
+  color: var(--accent-dark);
 }
 
 .total {
@@ -122,6 +125,6 @@ function goCheckout() {
 }
 
 .empty p {
-  color: #6b7280;
+  color: var(--text-soft);
 }
 </style>

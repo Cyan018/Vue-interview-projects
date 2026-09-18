@@ -97,14 +97,14 @@ h2 {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 14px;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid var(--glass-border);
 }
 
 .order-meta {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  color: #6b7280;
+  color: var(--text-soft);
   font-size: 13px;
 }
 
@@ -113,19 +113,19 @@ h2 {
 }
 
 .status.pending {
-  color: #dc2626;
+  color: #b88a8a;
 }
 
 .status.paid {
-  color: #f59e0b;
+  color: #b09b6f;
 }
 
 .status.shipped {
-  color: #2563eb;
+  color: #7f96a8;
 }
 
 .status.delivered {
-  color: #16a34a;
+  color: #7d9a8f;
 }
 
 .items {
@@ -150,8 +150,9 @@ h2 {
   padding: 4px;
   text-align: center;
   word-break: break-all;
-  background: #f3f4f6;
-  border: 1px solid #111;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
 }
 
 .info {
@@ -165,7 +166,7 @@ h2 {
 
 .sku {
   margin: 0;
-  color: #9ca3af;
+  color: var(--text-soft);
   font-size: 13px;
 }
 
@@ -186,12 +187,12 @@ h2 {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #9ca3af;
+  color: var(--text-soft);
   white-space: nowrap;
 }
 
 .step.done {
-  color: #111;
+  color: var(--text);
   font-weight: 700;
 }
 
@@ -215,6 +216,6 @@ h2 {
 }
 
 .empty p {
-  color: #6b7280;
+  color: var(--text-soft);
 }
 </style>

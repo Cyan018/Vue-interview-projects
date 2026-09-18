@@ -66,6 +66,28 @@ const products = [
       { id: 'sku-6-1', name: '白色', stock: 15, price: 299, discountPrice: 239 },
       { id: 'sku-6-2', name: '黑色', stock: 4, price: 299, discountPrice: 239 }
     ]
+  },
+  {
+    id: 7,
+    name: '羊毛针织帽',
+    image: '针织帽',
+    price: 149,
+    discountPrice: 119,
+    skus: [
+      { id: 'sku-7-1', name: '米白 / 均码', stock: 18, price: 149, discountPrice: 119 },
+      { id: 'sku-7-2', name: '灰色 / 均码', stock: 9, price: 149, discountPrice: 119 }
+    ]
+  },
+  {
+    id: 8,
+    name: '头层牛皮卡包',
+    image: '牛皮卡包',
+    price: 199,
+    discountPrice: 169,
+    skus: [
+      { id: 'sku-8-1', name: '棕色', stock: 12, price: 199, discountPrice: 169 },
+      { id: 'sku-8-2', name: '黑色', stock: 6, price: 199, discountPrice: 169 }
+    ]
   }
 ]
 

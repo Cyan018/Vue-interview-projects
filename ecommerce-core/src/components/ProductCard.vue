@@ -26,14 +26,19 @@ defineEmits(['buy', 'add'])
 
 <style scoped>
 .product-card {
-  border: 1px solid #111;
-  padding: 16px;
-  background: #fff;
-  transition: transform 0.15s ease;
+  border: 1px solid var(--glass-border);
+  padding: 18px;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(18px) saturate(1.12);
+  -webkit-backdrop-filter: blur(18px) saturate(1.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .image {
@@ -46,7 +51,8 @@ defineEmits(['buy', 'add'])
   padding: 10px;
   text-align: center;
   word-break: break-all;
-  background: #f3f4f6;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
   margin-bottom: 14px;
 }
 
@@ -63,13 +69,13 @@ h3 {
 }
 
 .price {
-  color: #111;
+  color: var(--text);
   font-weight: 700;
   font-size: 18px;
 }
 
 .origin {
-  color: #9ca3af;
+  color: var(--text-soft);
   text-decoration: line-through;
 }
 
